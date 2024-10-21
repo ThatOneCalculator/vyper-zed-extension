@@ -1,10 +1,10 @@
 [package]
-name = "python-lsp-zed-extension"
+name = "vyper-lsp-zed-extension"
 version = "0.0.1"
 edition = "2021"
 
 [lib]
-path = "src/python_lsp.rs"
+path = "src/vyper_lsp.rs"
 crate-type = ["cdylib"]
 
 [dependencies]

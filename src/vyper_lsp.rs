@@ -1,5 +1,5 @@
 use zed::LanguageServerId;
-use zed_extension_api::{self as zed, serde_json::json, settings::LspSettings, Result};
+use zed_extension_api::{self as zed, settings::LspSettings, Result};
 
 struct PythonLspExtension {}
 
@@ -13,13 +13,14 @@ impl zed::Extension for PythonLspExtension {
         _language_server_id: &LanguageServerId,
         worktree: &zed::Worktree,
     ) -> Result<zed::Command> {
-        match worktree.which("pylsp") {
+        match worktree.which("vyper-lsp") {
             Some(path) => Ok(zed::Command {
                 command: path,
-                args: vec!["-v".into()],
+                // args: vec!["-v".into()],
+                args: vec![],
                 env: vec![],
             }),
-            None => Err("Unable to find pylsp from worktree".into()),
+            None => Err("Unable to find vyper-lsp from worktree".into()),
         }
     }
 
@@ -44,11 +45,6 @@ impl zed::Extension for PythonLspExtension {
             .ok()
             .and_then(|lsp_settings| lsp_settings.settings.clone())
             .unwrap_or_default();
-
-        // pylsp expects a top level `pylsp` key, so we'll wrap the settings
-        let settings = json!({
-            "pylsp": settings
-        });
 
         Ok(Some(settings))
     }

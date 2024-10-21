@@ -1,11 +1,11 @@
-id = "pylsp"
-name = "Python LSP"
+id = "vyper-lsp"
+name = "Vyper LSP"
 version = "0.0.1"
 schema_version = 1
-authors = ["Kyle Kelley <rgbkrk@gmail.com>"]
-description = "python-lsp extension for Zed"
-repository = "https://github.com/rgbkrk/python-lsp-zed-extension"
+authors = ["Kainoa Kanter <kainoa@t1c.dev>", "Kyle Kelley <rgbkrk@gmail.com>"]
+description = "vyper-lsp extension for Zed"
+repository = "https://github.com/ThatOneCalculator/vyper-lsp-zed-extension"
 
-[language_servers.pylsp]
-name = "pylsp"
-languages = ["Python"]
+[language_servers.vyper-lsp]
+name = "vyper-lsp"
+languages = ["Vyper"]
