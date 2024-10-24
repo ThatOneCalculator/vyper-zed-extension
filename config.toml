@@ -1,0 +1,4 @@
+name = "Vyper"
+grammar = "vyper"
+path_suffixes = ["vy"]
+line_comments = ["# "]

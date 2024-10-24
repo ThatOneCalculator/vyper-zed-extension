@@ -1,10 +1,14 @@
-id = "vyper-lsp"
-name = "Vyper LSP"
-version = "0.0.1"
+id = "vyper"
+name = "Vyper"
+version = "0.0.3"
 schema_version = 1
 authors = ["Kainoa Kanter <kainoa@t1c.dev>", "Kyle Kelley <rgbkrk@gmail.com>"]
-description = "vyper-lsp extension for Zed"
+description = "Vyper Grammar and LSP extension for Zed"
 repository = "https://github.com/ThatOneCalculator/vyper-lsp-zed-extension"
+
+[grammars.vyper]
+repository = "https://github.com/madlabman/tree-sitter-vyper"
+commit = "e4d43a8ad1c59fea7c0d4a1c24301829b61694a1"
 
 [language_servers.vyper-lsp]
 name = "vyper-lsp"

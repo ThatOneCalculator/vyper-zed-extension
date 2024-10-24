@@ -1,9 +1,9 @@
 use zed::LanguageServerId;
 use zed_extension_api::{self as zed, settings::LspSettings, Result};
 
-struct PythonLspExtension {}
+struct VyperLspExtension {}
 
-impl zed::Extension for PythonLspExtension {
+impl zed::Extension for VyperLspExtension {
     fn new() -> Self {
         Self {}
     }
@@ -50,4 +50,4 @@ impl zed::Extension for PythonLspExtension {
     }
 }
 
-zed::register_extension!(PythonLspExtension);
+zed::register_extension!(VyperLspExtension);
