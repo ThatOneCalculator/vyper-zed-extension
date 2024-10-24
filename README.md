@@ -1,4 +1,4 @@
-# Python LSP Server Zed Extension
+# Vyper Zed Extension
 
 This extension uses the [Vyper Language Server](https://github.com/vyperlang/vyper-lsp/tree/v0.4.0-support) to provide language support for Vyper 0.4.0+ in Zed.
 
