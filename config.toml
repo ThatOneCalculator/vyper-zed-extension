@@ -1,4 +1,4 @@
 name = "Vyper"
-grammar = "vyper"
+grammar = "python"
 path_suffixes = ["vy"]
 line_comments = ["# "]
