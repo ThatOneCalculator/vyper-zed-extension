@@ -16,8 +16,7 @@ impl zed::Extension for VyperLspExtension {
         match worktree.which("vyper-lsp") {
             Some(path) => Ok(zed::Command {
                 command: path,
-                // args: vec!["-v".into()],
-                args: vec![],
+                args: vec!["--stdio".into()],
                 env: vec![],
             }),
             None => Err("Unable to find vyper-lsp from worktree".into()),
