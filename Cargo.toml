@@ -1,5 +1,5 @@
 [package]
-name = "vyper-lsp-zed-extension"
+name = "vyper"
 version = "0.0.1"
 edition = "2021"
 

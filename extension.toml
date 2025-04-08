@@ -7,5 +7,12 @@ description = "Vyper Grammar and LSP extension for Zed"
 repository = "https://github.com/ThatOneCalculator/vyper-lsp-zed-extension"
 
 [language_servers.vyper-lsp]
-name = "vyper-lsp"
-languages = ["Vyper"]
+language = "Vyper"
+language_ids = { "Vyper" = "vyper" }
+name = "Vyper Language Server"
+
+[grammars.vyper]
+repository = "https://github.com/gpd0/tree-sitter-vyper"
+rev = "823155ef76a8a9f1c0fc855928ae6d432b313ad7"
+# repository = "https://github.com/sambacha/tree-sitter-vyper"
+# rev = "646b4c4c520a103b8adca1e0409c12e10cee5bdf"
